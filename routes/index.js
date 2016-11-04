@@ -31,10 +31,18 @@ router.get('/', function(req, res) {
 
   console.log('home page requested!');
 
-  var jsonData = {
-  	'name': 'itp-directory',
-  	'api-status':'OK'
+ var jsonData = {
+   'name': 'class-directory',
+   'api-status':'OK'
   }
+
+res.redirect('/directory')
+
+
+  // var jsonData = {
+  // 	'name': 'itp-directory',
+  // 	'api-status':'OK'
+  // }
 
   // respond with json data
   //res.json(jsonData)
